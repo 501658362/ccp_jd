@@ -8,10 +8,10 @@
 WorkDir=$(cd $(dirname $0); pwd)
 JsList=$(cd $WorkDir; ls *.js | grep -Ei "j[drx]_" | perl -ne "{print unless /\.bak/}")
 JsList="$JsList backUp/xmSports.js"
-FileLoon=$WorkDir/Loon/lxk0301_LoonTask.conf
-FileQx=$WorkDir/QuantumultX/lxk0301_gallery.json
-FileQxRe=$WorkDir/QuantumultX/lxk0301_cookies.conf
-FileSurge=$WorkDir/Surge/lxk0301_Task.sgmodule.sgmodule
+FileLoon=$WorkDir/Loon/LoonTask.conf
+FileQx=$WorkDir/QuantumultX/gallery.json
+FileQxRe=$WorkDir/QuantumultX/cookies.conf
+FileSurge=$WorkDir/Surge/sgmodule.sgmodule
 
 ## task清单头尾部内容
 CommentsLoon="# IOS Loon Task&Cookies配置 \n# TG通知频道 (https://t.me/jdfruit)\n# 使用方法:打开APP，顶部的配置 -> 脚本 -> 订阅脚本- > 点击右上角+号 -> 添加url链接\n\nhostname = me-api.jd.com, draw.jdfcloud.com, jdjoy.jd.com, account.huami.com"
